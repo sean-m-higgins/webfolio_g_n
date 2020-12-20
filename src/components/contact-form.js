@@ -17,9 +17,12 @@ const ContactForm = () => {
                 <div className="col">   
                     <textarea name="message" />
                 </div>
-                <a type="submit">
+                <button type="submit">
                     <StyledButton children="Send"/>
-                </a>
+                </button>
+                {/* <a type="submit">
+                    <StyledButton children="Send"/>
+                </a> */}
             </form>
 }
 
