@@ -1,6 +1,6 @@
 import React from "react"
-
 import StyledButton from "./moreButton"
+import "../styles/contact_form.css"
 
 const ContactForm = () => {
     return <form name="Contact Form" method="POST" data-netlify="true">
