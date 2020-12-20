@@ -1,9 +1,30 @@
+.main-box, .left-box, .right-box {
+  z-index: 2;
+}
+
+#header-line {
+  top: 0;
+  height: 2px;
+  color: black;
+}
+
+footer {
+  padding-top: 40px;
+}
+
+
+.outtermost {
+  background-color: #FFFAE0;
+  /* background-color: #C0A1FF; */
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  background-color: #FFFAE0;
 }
 body {
   margin: 0;
