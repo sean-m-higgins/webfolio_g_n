@@ -1,17 +1,3 @@
-.main-box, .left-box, .right-box {
-  z-index: 2;
-}
-
-#header-line {
-  top: 0;
-  height: 2px;
-  color: black;
-}
-
-footer {
-  padding-top: 40px;
-}
-
 
 .outtermost {
   background-color: #FFFAE0;

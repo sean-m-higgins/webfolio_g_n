@@ -1,5 +1,5 @@
 import React from "react"
-import StyledButton from "./moreButton"
+import StyledButton from "./more-button"
 import "../styles/contact_form.css"
 
 const ContactForm = () => {

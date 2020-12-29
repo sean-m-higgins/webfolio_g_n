@@ -2,3 +2,7 @@ button {
     background-color: #FFFAE0;
     border: none;
 }
+
+label {
+    color: black;
+}

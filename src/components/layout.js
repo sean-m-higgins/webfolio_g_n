@@ -27,24 +27,8 @@ const Layout = ({ children }) => {
   return (
     <div className="container-fluid outtermost px-0">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <hr id="header-line"></hr>
-
-      <div className="row no-gutters">
-        <div className="col-2 left-box">
-          
-        </div>
-        <div className="col-8">
-          <main className="main-box">{children}</main>
-        </div>
-        <div className="col-2 right-box">
-          
-        </div>
-      </div>
-      
-      <hr id="header-line"></hr>
-
+      {children}
       <Footer />
-      
     </div>
   )
 }
