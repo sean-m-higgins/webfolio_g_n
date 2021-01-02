@@ -8,7 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 // We can inject some CSS into the DOM.
 const styles = {
   root: {
-    background: 'linear-gradient(35deg, #3d005b 2%, #C0A1FF 100%)',
+    background: 'linear-gradient(35deg, #BF5EFF 2%, #C0A1FF 100%)',
     borderRadius: 3,
     border: 0,
     color: 'white',
