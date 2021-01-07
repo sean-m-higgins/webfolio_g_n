@@ -1,11 +1,10 @@
+import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      // background: `#BF5EFF`,
       position: `fixed`,
       top: 0,
       left: 0,
@@ -13,20 +12,9 @@ const Header = ({ siteTitle }) => (
       width: `100vw`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#BF5EFF`,
-            textDecoration: `none`,
-          }}
-        >
+    <div style={{ margin: `0 auto`, padding: `1.45rem 1.0875rem`}} >
+      <h1 style={{ margin: 0 }} >
+        <Link to="/" className="top-link">
           SH
         </Link>
       </h1>

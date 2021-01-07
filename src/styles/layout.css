@@ -5,6 +5,10 @@
   /* background-color: #C0A1FF; */
 }
 
+.top-link {
+  text-decoration: none;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -13,8 +17,8 @@ html {
   overflow-y: scroll;
   background-color: #BF5EFF;
 }
+
 body {
-  --text-color: #222;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,31 +31,36 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  --text-color: black;
+  --bkg-color: #fff;
 }
 
 body.dark-theme {
-  --text-color: #eee;
+  --text-color: #BF5EFF;
+  --bkg-color: #121212;
 }
 
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body {
-    --text-color: #eee;
+    --text-color: #BF5EFF;
     --bkg-color: #121212;
   }
   body.light-theme {
-    --text-color: #222;
+    --text-color: black;
     --bkg-color: #fff;
   }
 }
 
-body {
-  background: var(--bkg-color);
+body, .top-link, .inner-about-contact {
+  color: var(--text-color);
+  /* background: var(--bkg-color); */
 }
 
-.light-dark-button-div {
+/* .light-dark-button-div {
   color: var(--text-color);
-}
+} */
+
 
 article,
 aside,

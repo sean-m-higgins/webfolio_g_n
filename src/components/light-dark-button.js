@@ -29,7 +29,8 @@ class LightDarkButton extends React.Component {
       }));
 
       const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
+    //   console.log(prefersDarkScheme)
+    
     //   const currentTheme = localStorage.getItem("theme");
     //   console.log(currentTheme)
 
@@ -41,12 +42,14 @@ class LightDarkButton extends React.Component {
           ? "light"
           : "dark";
         theme = l_theme;
+        // console.log(theme)
       } else {
         document.body.classList.toggle("dark-theme");
         var d_theme = document.body.classList.contains("dark-theme")
           ? "dark"
           : "light";
         theme = d_theme;
+        // console.log(theme)
       }
       if (typeof window !== 'undefined') {
         localStorage.setItem("theme", theme);
