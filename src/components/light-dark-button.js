@@ -10,14 +10,17 @@ class LightDarkButton extends React.Component {
       // This binding is necessary to make `this` work in the callback
       this.handleClick = this.handleClick.bind(this);
 
-      const currentTheme = localStorage.getItem("theme");
-      console.log(currentTheme)
-      
-      if (currentTheme === "dark") {
-        document.body.classList.toggle("dark-theme");
-      } else if (currentTheme === "light") {
-        document.body.classList.toggle("light-theme");
+      if (typeof window !== 'undefined') {
+        const currentTheme = localStorage.getItem("theme");
+        console.log(currentTheme)
+        
+        if (currentTheme === "dark") {
+            document.body.classList.toggle("dark-theme");
+        } else if (currentTheme === "light") {
+            document.body.classList.toggle("light-theme");
+        }
       }
+      
     }
   
     handleClick() {
@@ -27,8 +30,8 @@ class LightDarkButton extends React.Component {
 
       const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-      const currentTheme = localStorage.getItem("theme");
-      console.log(currentTheme)
+    //   const currentTheme = localStorage.getItem("theme");
+    //   console.log(currentTheme)
 
       var theme = null
 
@@ -45,15 +48,17 @@ class LightDarkButton extends React.Component {
           : "light";
         theme = d_theme;
       }
-      localStorage.setItem("theme", theme);
-      console.log(currentTheme)
+      if (typeof window !== 'undefined') {
+        localStorage.setItem("theme", theme);
+      }
+    //   console.log(currentTheme)
     }
   
     render() {
       return (
           <div className="light-dark-button-div">
-            <LightLogo style={{fill: '#BF5EFF'}} onClick={this.handleClick} className="inner-about-contact light-dark-icon"/>
-             
+            <LightLogo onClick={this.handleClick} className="inner-about-contact light-dark-icon"/>
+            {/* style={{fill: '#BF5EFF'}} */}
             {/* <Button onClick={this.handleClick} classname="test">
                 {this.state.isToggleOn ? 'ON' : 'OFF'}
             </Button> */}
