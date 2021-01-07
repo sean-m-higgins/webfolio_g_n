@@ -1,6 +1,7 @@
 
 .outtermost {
-  background-color: #FFFAE0;
+  background-color: none;
+  /* background-color: #FFFAE0; */
   /* background-color: #C0A1FF; */
 }
 
@@ -10,9 +11,10 @@ html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
-  background-color: #FFFAE0;
+  background-color: #BF5EFF;
 }
 body {
+  --text-color: #222;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,6 +28,31 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+body.dark-theme {
+  --text-color: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+.light-dark-button-div {
+  color: var(--text-color);
+}
+
 article,
 aside,
 details,

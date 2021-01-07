@@ -3,6 +3,7 @@ import '../styles/footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithubSquare, faMedium } from "@fortawesome/free-brands-svg-icons"
+import LightDarkButton from "./light-dark-button"
 
 class Footer extends Component {
     render() {
@@ -10,6 +11,7 @@ class Footer extends Component {
             <footer>
                 <div className="row outerBox">
                     <div className="col">
+                        <LightDarkButton />
                         <ul>
                             <li className="listItem"><a href="mailto:shiggins@luc.edu?subject=Person Website Inquiry"> <FontAwesomeIcon icon={ faEnvelope } className="inner-about-contact" /></a></li>
                             <li className="listItem"><a href="https://github.com/sean-m-higgins"> <FontAwesomeIcon icon={ faGithubSquare } className="inner-about-contact" /></a></li>

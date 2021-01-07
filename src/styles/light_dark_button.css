@@ -1,0 +1,14 @@
+.light-dark-button-div {
+
+}
+
+.light-dark-icon {
+    height: 100px;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
